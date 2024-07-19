@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confetti Animation</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        confetti({
+            particleCount: 200,
+            spread: 60,
+            startVelocity: 30,
+            decay: 0.9,
+            colors: ['#bb0000', '#ffffff']
+        });
+    </script>
+</body>
+</html>
